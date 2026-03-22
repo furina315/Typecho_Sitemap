@@ -1,0 +1,191 @@
+/**
+ * Sitemap 插件样式
+ * 
+ * HTML Sitemap页面的样式
+ */
+
+.sitemap-html {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.sitemap-html h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.sitemap-html ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sitemap-html ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.sitemap-html ul li:last-child {
+    border-bottom: none;
+}
+
+.sitemap-html ul li a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.sitemap-html ul li a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+.sitemap-html ul li span {
+    color: #7f8c8d;
+    font-size: 0.85em;
+    margin-left: 10px;
+}
+
+.sitemap-html ul ul {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.sitemap-html ul ul li {
+    padding: 5px 0;
+    border-bottom: none;
+}
+
+/* 标签云样式 */
+.sitemap-html .tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.sitemap-html .tag-cloud a {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: #ecf0f1;
+    border-radius: 15px;
+    color: #34495e;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+}
+
+.sitemap-html .tag-cloud a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .sitemap-html {
+        padding: 15px;
+    }
+    
+    .sitemap-html h2 {
+        font-size: 1.3em;
+    }
+    
+    .sitemap-html ul ul {
+        margin-left: 15px;
+    }
+}
+
+/* 后台管理样式 */
+.sitemap-admin {
+    padding: 20px;
+}
+
+.sitemap-admin .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.sitemap-admin .stat-card {
+    background: #fff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sitemap-admin .stat-card h3 {
+    margin: 0 0 10px 0;
+    color: #7f8c8d;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.sitemap-admin .stat-card .number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.sitemap-admin .action-buttons {
+    margin-top: 20px;
+}
+
+.sitemap-admin .action-buttons button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.sitemap-admin .action-buttons button:hover {
+    background-color: #2980b9;
+}
+
+.sitemap-admin .action-buttons button.secondary {
+    background-color: #95a5a6;
+}
+
+.sitemap-admin .action-buttons button.secondary:hover {
+    background-color: #7f8c8d;
+}
+
+.sitemap-admin .info-box {
+    background-color: #e8f4f8;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.sitemap-admin .info-box h4 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+}
+
+.sitemap-admin .info-box p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.sitemap-admin .info-box code {
+    background-color: #f8f9fa;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 0.9em;
+}
